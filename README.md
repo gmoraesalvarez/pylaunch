@@ -8,3 +8,5 @@ Parses the list from /usr/share/applications
 Ongoing development, as everything else.
 
 Put a png file named x.png in the same folder.
+
+Requires python2 modules pillow, tk, imaging-tk, rsvg.
