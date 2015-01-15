@@ -69,11 +69,11 @@ def genlist():
         contents = ''
     print 'end genlist'
     print 'finding icons'
-    iconsdirs = ['/home/gma/.icons/Numix/','/usr/share/icons/hicolor/','/usr/share/pixmaps/']
+    iconsdirs = ['/usr/share/icons/hicolor/','/usr/share/pixmaps/']
     allicons = []
-    for root,dirs,files in os.walk(iconsdirs[2],topdown=True):
-        for name in files:
-            allicons.append(os.path.join(root, name))
+    #for root,dirs,files in os.walk(iconsdirs[2],topdown=True):
+     #   for name in files:
+      #      allicons.append(os.path.join(root, name))
     for root,dirs,files in os.walk(iconsdirs[1],topdown=True):
         for name in files:
             allicons.append(os.path.join(root, name))
@@ -143,7 +143,7 @@ def drawicons(frame):
                     imr = im.resize((64,64),Image.BICUBIC)
                     temp = ImageTk.PhotoImage(imr)
                 except:
-                    temp = ImageTk.PhotoImage(Image.open('openbox.png'))
+                    temp = ImageTk.PhotoImage(Image.open('x.png'))
                 frame.image.append(temp)
                 #print 'drawing '+icon+' n'+str(i)
                 frame.img.append(frame.canvas.create_image(px[i], py[i], anchor='nw', image=frame.image[i]))
