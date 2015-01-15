@@ -10,3 +10,5 @@ Ongoing development, as everything else.
 Put a png file named x.png in the same folder.
 
 Requires python2 modules pillow, tk, imaging-tk, rsvg.
+
+XPM icons can be a problem still, don't know how to work around the issue.
