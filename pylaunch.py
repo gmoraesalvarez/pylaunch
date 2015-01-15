@@ -157,7 +157,7 @@ class Launcher(Frame):
     def __init__(self, parent=None, color='black'):
         Frame.__init__(self, parent)
         self.pack(expand=YES, fill=BOTH)                  
-        canv = Canvas(self, bg=color, relief=SUNKEN,width=300, height=200)
+        canv = Canvas(self, bg=color, relief=SUNKEN,width=1000, height=540)
         canv.config(scrollregion=(0,0,300, 1000))         
         canv.config(highlightthickness=0)                 
 	
